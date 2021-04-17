@@ -19,8 +19,7 @@ namespace Lab6_2
  public PeopleInfo()
  {
  }
- public PeopleInfo(string name, string surname, string gender, int age, string
-location)
+ public PeopleInfo(string name, string surname, string gender, int age, string location)
  {
  this.name = name;
  this.surname = surname;
@@ -79,8 +78,7 @@ DataContractJsonSerializer serializer)
  int index = 0;
  foreach (PeopleInfo p in list)
  {
- Console.WriteLine("[{0}]\nИмя : {1}\nФамилия: {2}\nПол: {3}\nМесто
-жительства: {4}\nВозраст: {5}", index, p.name, p.surname, p.gender, p.location, p.age);
+ Console.WriteLine("[{0}]\nИмя : {1}\nФамилия: {2}\nПол: {3}\nМесто жительства: {4}\nВозраст: {5}", index, p.name, p.surname, p.gender, p.location, p.age);
  index++;
  }
  Console.WriteLine();
@@ -109,8 +107,7 @@ list.Count)
  if (input.ToLower() == "5")
  {
  string ask = "";
- Console.WriteLine("Введите\n'1' искать по имени\n'2' искать по
-возрасту:");
+ Console.WriteLine("Введите\n'1' искать по имени\n'2' искать по возрасту:");
  ask = Console.ReadLine();
  if (ask == "1")
  {
@@ -150,8 +147,7 @@ if (index == list.Count && list[index - 1].age !=AgeCheck)
  }
  if (input.ToLower() == "6")
  {
- Console.WriteLine("Введите путь для сохранения или введите 'i' для
-сохранения в папке по умолчанию:");
+ Console.WriteLine("Введите путь для сохранения или введите 'i' для сохранения в папке по умолчанию:");
  string path = Console.ReadLine();
  if (path == "i")
  {
@@ -159,9 +155,7 @@ if (index == list.Count && list[index - 1].age !=AgeCheck)
 string res = "";
  foreach (PeopleInfo elem in list)
  {
- res += $"Номер
-записи:{index}\nИмя:{elem.name}\nФамилия:{elem.surname}\nПол:{elem.gender}\nВозраст:{elem
-.age}\nМесто жительства:{elem.location}";
+ res += $"Номер записи:{index}\nИмя:{elem.name}\nФамилия:{elem.surname}\nПол:{elem.gender}\nВозраст:{elem.age}\nМесто жительства:{elem.location}";
  res += "\n";
  index++;
  }
@@ -178,8 +172,7 @@ File.WriteAllText("text.txt", res);
  int index = 0;
 foreach (PeopleInfo elem in list)
  {
- res += $"Номер
-записи:{index}\nИмя:{elem.name}\nФамилия:{elem.surname}\nПол:{elem.gender}\nВозраст:{elem.age}\nМесто жительства:{elem.location}";
+ res += $"Номер записи:{index}\nИмя:{elem.name}\nФамилия:{elem.surname}\nПол:{elem.gender}\nВозраст:{elem.age}\nМесто жительства:{elem.location}";
  res += "\n";
  index++;
  }
