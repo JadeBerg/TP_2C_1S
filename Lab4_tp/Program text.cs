@@ -96,8 +96,7 @@ namespace Lab04
  {
  for (; ; )
  {
- Console.WriteLine("\nКакое сравнение вы хотите сделать или введите 'b',
-чтобы вернуться обратно:");
+ Console.WriteLine("\nКакое сравнение вы хотите сделать или введите 'b',чтобы вернуться обратно:");
  Console.WriteLine("Введите: ");
  string op = Console.ReadLine();
  if (op == "<")
