@@ -99,8 +99,7 @@ namespace Practise
  {
  base.Use();
  Console.WriteLine("Телевизор включен.");
- Console.WriteLine($"Яркость телевизора сейчас {b}
-и громкость {v}.");
+ Console.WriteLine($"Яркость телевизора сейчас {b} и громкость {v}.");
  }
  else
  Console.WriteLine("Телевизор выключен.");
@@ -308,15 +307,13 @@ namespace Practise
  if (op == "1")
  {
  Console.WriteLine("Введите сколько хотите добавить:");
- int a =
-Convert.ToInt32(Console.ReadLine());
+ int a = Convert.ToInt32(Console.ReadLine());
  ((Lamp)arr[index]).Brightness(a);
  }
  if (op == "2")
  {
  Console.WriteLine("Введите сколько хотите убавить:");
- int a =
-Convert.ToInt32(Console.ReadLine());
+ int a = Convert.ToInt32(Console.ReadLine());
  ((Lamp)arr[index]).Brightness1(a);
  }
  continue;
@@ -331,8 +328,7 @@ Convert.ToInt32(Console.ReadLine());
  op = Console.ReadLine();
  if (op == "1")
  {
- Console.WriteLine("Введите сколько
-хотите добавить:");
+ Console.WriteLine("Введите сколько хотите добавить:");
  int a =
 Convert.ToInt32(Console.ReadLine());
  ((TV)arr[index]).Brightness(a);
@@ -340,8 +336,7 @@ Convert.ToInt32(Console.ReadLine());
  if (op == "2")
  {
  Console.WriteLine("Введите сколько хотите убавить:");
- int a =
-Convert.ToInt32(Console.ReadLine());
+ int a = Convert.ToInt32(Console.ReadLine());
  ((TV)arr[index]).Brightness1(a);
  }
  continue;
@@ -373,22 +368,19 @@ Convert.ToInt32(Console.ReadLine());
  if (temp == "5" && index == 0)
  {
 
-Console.WriteLine($"Яркость:{((Lamp)arr[index]).BrightnessI
-nfo()}%\n");
+Console.WriteLine($"Яркость:{((Lamp)arr[index]).BrightnessInfo()}%\n");
  continue;
  }
  if (temp == "5" && index == 1)
  {
 
-Console.WriteLine($"Яркость:{((TV)arr[index]).BrightnessInf
-o()}%\n");
+Console.WriteLine($"Яркость:{((TV)arr[index]).BrightnessInfo()}%\n");
  continue;
  }
  if (temp == "5" && index == 2)
  {
 
-Console.WriteLine($"Громкость:{((Radio)arr[index]).VolumeI
-nfo()}%\n");
+Console.WriteLine($"Громкость:{((Radio)arr[index]).VolumeInfo()}%\n");
  continue;
  }
  if (temp == "6" && index == 1)
@@ -401,16 +393,14 @@ nfo()}%\n");
  op = Console.ReadLine();
  if (op == "1")
  {
- Console.WriteLine("Введите сколько
-хотите добавить:");
+ Console.WriteLine("Введите сколько хотите добавить:");
  int a =
 Convert.ToInt32(Console.ReadLine());
  ((TV)arr[index]).Volume(a);
  }
  if (op == "2")
  {
- Console.WriteLine("Введите сколько
-хотите убавить:");
+ Console.WriteLine("Введите сколько хотите убавить:");
  int a =
 Convert.ToInt32(Console.ReadLine());
  ((TV)arr[index]).Volume1(a);
@@ -420,8 +410,7 @@ Convert.ToInt32(Console.ReadLine());
  if (temp == "7" && index == 1)
  {
 
-Console.WriteLine($"Громкость:{((TV)arr[index]).VolumeInfo
-()}%\n");
+Console.WriteLine($"Громкость:{((TV)arr[index]).VolumeInfo()}%\n");
  continue;
  }
  }
