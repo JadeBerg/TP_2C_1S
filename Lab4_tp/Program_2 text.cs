@@ -61,8 +61,7 @@ namespace Practise
  {
  if (b + added_Brightness > 100)
  {
- Console.WriteLine("Слишком много добавьте
-меньше!");
+ Console.WriteLine("Слишком много добавьте меньше!");
  }
  else
  {
@@ -73,8 +72,7 @@ namespace Practise
  {
  if (b - sub_Brightness < 0)
  {
- Console.WriteLine("Слишком много убавьте
-меньше!");
+ Console.WriteLine("Слишком много убавьте меньше!");
  }
  else
  {
@@ -111,8 +109,7 @@ namespace Practise
  {
  if (b + added_Brightness > 100)
  {
- Console.WriteLine("Слишком много добавьте
-меньше!");
+ Console.WriteLine("Слишком много добавьте меньше!");
  }
  else
  {
@@ -123,8 +120,7 @@ namespace Practise
  {
  if (b - sub_Brightness < 0)
  {
- Console.WriteLine("Слишком много убавьте
-меньше!");
+ Console.WriteLine("Слишком много убавьте меньше!");
  }
  else
  {
@@ -139,8 +135,7 @@ namespace Practise
  {
  if (v + added_Volume > 100)
  {
- Console.WriteLine("Слишком много добавьте
-меньше!");
+ Console.WriteLine("Слишком много добавьте меньше!");
  }
  else
  {
@@ -151,8 +146,7 @@ namespace Practise
  {
  if (v - sub_Volume < 0)
  {
- Console.WriteLine("Слишком много убавьте
-меньше!");
+ Console.WriteLine("Слишком много убавьте меньше!");
  }
  else
  {
@@ -187,8 +181,7 @@ namespace Practise
  {
  if (v + added_Volume > 100)
  {
- Console.WriteLine("Слишком много добавьте
-меньше!");
+ Console.WriteLine("Слишком много добавьте меньше!");
  }
  else
  {
@@ -199,8 +192,7 @@ namespace Practise
  {
  if (v - sub_Volume < 0)
  {
- Console.WriteLine("Слишком много убавьте
-меньше!");
+ Console.WriteLine("Слишком много убавьте меньше!");
  }
  else
  {
@@ -216,8 +208,7 @@ namespace Practise
  {
  static void CreateDevice(Appliances[] arr, int index)
  {
- Console.WriteLine("Введите названя бытового
-прибора: ");
+ Console.WriteLine("Введите названя бытового прибора: ");
  string temp = Console.ReadLine();
  if (index == 0)
  arr[index] = new Lamp(temp);
@@ -235,11 +226,8 @@ namespace Practise
  {
  for (; ; )
  {
- Console.WriteLine("Выберите устройство: \n«1»-
-Лампа \n«2» - Телевизор \n«3» - Радио");
-
- Console.WriteLine("Или введите «e» для
-выхода.");
+ Console.WriteLine("Выберите устройство: \n«1»- Лампа \n«2» - Телевизор \n«3» - Радио");
+ Console.WriteLine("Или введите «e» для выхода.");
  Console.WriteLine("Ввод: ");
  string temp = Console.ReadLine();
  if (temp == "1")
@@ -276,23 +264,17 @@ namespace Practise
  else
  {
  Console.WriteLine("\nДействия: ");
- Console.WriteLine("«1» - Включить\n«2» -
-Выключить\n«3» - Использовать\n");
+ Console.WriteLine("«1» - Включить\n«2» - Выключить\n«3» - Использовать\n");
  if (index == 0)
- Console.WriteLine("«4» - Управление
-яркостью\n«5» -Информация о яркости\n");
+ Console.WriteLine("«4» - Управление яркостью\n«5» -Информация о яркости\n");
  if (index == 1)
  {
- Console.WriteLine("«4» - Управление
-яркостью\n«5» -Информация о яркости\n");
- Console.WriteLine("«6» -Управление
-громкостью\n«7» - Информация о громкости\n");
+ Console.WriteLine("«4» - Управление яркостью\n«5» -Информация о яркости\n");
+ Console.WriteLine("«6» -Управление громкостью\n«7» - Информация о громкости\n");
  }
  if (index == 2)
- Console.WriteLine("«4» - -Управление
-громкостью\n«5» - Информация о громкости\n");
- Console.WriteLine("Введите «b» для доступа к
-предыдущему меню");
+ Console.WriteLine("«4» - -Управление громкостью\n«5» - Информация о громкости\n");
+ Console.WriteLine("Введите «b» для доступа к предыдущему меню");
  Console.WriteLine("Ввод: ");
  temp = Console.ReadLine();
  }
@@ -317,8 +299,7 @@ namespace Practise
  }
  if (temp == "4" && index == 0)
  {
- Console.WriteLine("Вы можете добавить
-либо убавить яркость:");
+ Console.WriteLine("Вы можете добавить либо убавить яркость:");
  string op;
  Console.WriteLine("1) Добавить");
  Console.WriteLine("2) Убавить");
@@ -326,16 +307,14 @@ namespace Practise
  op = Console.ReadLine();
  if (op == "1")
  {
- Console.WriteLine("Введите сколько
-хотите добавить:");
+ Console.WriteLine("Введите сколько хотите добавить:");
  int a =
 Convert.ToInt32(Console.ReadLine());
  ((Lamp)arr[index]).Brightness(a);
  }
  if (op == "2")
  {
- Console.WriteLine("Введите сколько
-хотите убавить:");
+ Console.WriteLine("Введите сколько хотите убавить:");
  int a =
 Convert.ToInt32(Console.ReadLine());
  ((Lamp)arr[index]).Brightness1(a);
@@ -344,8 +323,7 @@ Convert.ToInt32(Console.ReadLine());
  }
  if (temp == "4" && index == 1)
  {
- Console.WriteLine("Вы можете добавить
-либо убавить яркость:");
+ Console.WriteLine("Вы можете добавить либо убавить яркость:");
  string op;
  Console.WriteLine("1) Добавить");
  Console.WriteLine("2) Убавить");
@@ -361,8 +339,7 @@ Convert.ToInt32(Console.ReadLine());
  }
  if (op == "2")
  {
- Console.WriteLine("Введите сколько
-хотите убавить:");
+ Console.WriteLine("Введите сколько хотите убавить:");
  int a =
 Convert.ToInt32(Console.ReadLine());
  ((TV)arr[index]).Brightness1(a);
@@ -371,8 +348,7 @@ Convert.ToInt32(Console.ReadLine());
  }
  if (temp == "4" && index == 2)
  {
- Console.WriteLine("Вы можете добавить
-либо убавить громкость:");
+ Console.WriteLine("Вы можете добавить либо убавить громкость:");
  string op;
  Console.WriteLine("1) Добавить");
  Console.WriteLine("2) Убавить");
@@ -380,16 +356,14 @@ Convert.ToInt32(Console.ReadLine());
  op = Console.ReadLine();
  if (op == "1")
  {
- Console.WriteLine("Введите сколько
-хотите добавить:");
+ Console.WriteLine("Введите сколько хотите добавить:");
  int a =
 Convert.ToInt32(Console.ReadLine());
  ((Radio)arr[index]).Volume(a);
  }
  if (op == "2")
  {
- Console.WriteLine("Введите сколько
-хотите убавить:");
+ Console.WriteLine("Введите сколько хотите убавить:");
  int a =
 Convert.ToInt32(Console.ReadLine());
  ((Radio)arr[index]).Volume1(a);
@@ -419,8 +393,7 @@ nfo()}%\n");
  }
  if (temp == "6" && index == 1)
  {
- Console.WriteLine("Вы можете добавить
-либо убавить громкость:");
+ Console.WriteLine("Вы можете добавить либо убавить громкость:");
  string op;
  Console.WriteLine("1) Добавить");
  Console.WriteLine("2) Убавить");
