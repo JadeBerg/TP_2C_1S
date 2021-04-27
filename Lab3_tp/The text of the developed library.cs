@@ -77,8 +77,7 @@ namespace Practiсe
  //возвращает строку с информацией об объектах
  public virtual string GetInfo()
  {
- return $"{name} находится по адрессу {address}, номер телефона заведения -
-{phone}, количество персонала = {service} таких по городу {number}.";
+ return $"{name} находится по адрессу {address}, номер телефона заведения -{phone}, количество персонала = {service} таких по городу {number}.";
  }
  //Конструктор по умолчанию
  public Trade_Establishment()
