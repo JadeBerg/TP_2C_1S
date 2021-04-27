@@ -53,10 +53,8 @@ namespace Practise
  Console.WriteLine("sn 'name' ввести имя\t\t\t\tgn получить имя");
  Console.WriteLine("sp 'perimeter' ввести периметр\t\t\tgp получить периметр");
  Console.WriteLine("sa 'area' ввести площадь\t\t\tga получить площадь");
- Console.WriteLine("sc 'corners' ввести количество углов\t\tgc получить
-количество углов");
- Console.WriteLine("su 'number' ввести количество фигур\t\tgu получить
-количество фигур");
+ Console.WriteLine("sc 'corners' ввести количество углов\t\tgc получить количество углов");
+ Console.WriteLine("su 'number' ввести количество фигур\t\tgu получить количество фигур");
  Console.WriteLine("pa вывести всю информацию\t\t\tex выход");
  Console.WriteLine("Введите: ");
  action = Console.ReadLine().Split(" ");
